@@ -125,3 +125,22 @@ Commit 시점으로 되돌아가기
     ```
     - branch 생성 , 변경
 
+3. git log 
+  * 상세 git log
+    ```
+    git log --all --decorate --oneline --graph
+    ```
+
+# Git Merge
+branch의 여러 작업 항목을 통합
+1. git merge
+  * 두 브랜치를 한 commit을 통해 이어 붙임
+    ```
+    $ git merge { 브랜치 명 }
+    ```
+    - 현재 위치한 브랜치에서 해당 { 브랜치 명 }을 commit을 통해 이어 붙임
+2. git rebase
+  * 브랜치를 다른 브랜치에 이어 붙임
+    
+
+# Vi 명령어
