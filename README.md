@@ -91,4 +91,37 @@ Commit 시점으로 되돌아가기
     $ git revert --hard { 커밋 해시 }
     ```
 
+# Git Branch
+하나의 프로젝트 내에서 여러 작업 관리 ex ) 테스트 버전 , 배포 버전 , 새로운 기능
+1. git branch
+  * branch 생성 또는 목록 확인
+    ```
+    $ git branch { 브랜치 명 }
+    ```
+    - { 브랜치 명 } 이 없는 경우 목록 출력
+    - { 브랜치 명 } 이 있는 경우 해당 명으로 브랜치 생성
+  * branch 삭제  
+    ```
+    $ git branch -d { 브랜치 명 }
+    ```
+    - { 브랜치 명 } 삭제
+    ```
+    $ git branch -D { 브랜치 명 }
+    ```
+    - { 브랜치 명 } 강제 삭제
+  * branch 명 수정
+    ```
+    $ git branch -m { 기존 브랜치명 } { 새 브랜치명 }
+    ```
+
+2. git switch
+  * 현 branch 변경
+    ```
+    $ git switch { 브랜치 명 }
+    ```
+    - checkout 명령어가 최신버전 부터 switch , restore 분리
+    ```
+    $ git switch -c { 브랜치 명 }
+    ```
+    - branch 생성 , 변경
 
